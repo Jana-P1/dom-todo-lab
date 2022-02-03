@@ -13,7 +13,9 @@ const itemsAddedToList = document.getElementById("todo-list")
 
 const resetButton = document.getElementById("reset-button")
 
+function init() {
 
+}
 
 
 toDoListButton.addEventListener("click", function(evt){
@@ -25,8 +27,12 @@ toDoListButton.addEventListener("click", function(evt){
   }
 })
 
-resetButton.addEventListener("click", reset)
+// resetButton.addEventListener("click", reset)
 
-function reset() {
-  itemsAddedToList.textContent = ""
-}
+// function reset() {
+//   itemsAddedToList.textContent = ""
+// }
+
+// itemsAddedToList.addEventListener("click", function(evt){
+//   itemsAddedToList.remove()
+// })
