@@ -11,6 +11,8 @@ const toDoListButton = document.getElementById("submit-button")
 // Creates variable for the <ul>
 const itemsAddedToList = document.getElementById("todo-list")
 
+const resetButton = document.getElementById("reset-button")
+
 
 
 
@@ -22,3 +24,9 @@ toDoListButton.addEventListener("click", function(evt){
     input.value = ""
   }
 })
+
+resetButton.addEventListener("click", reset)
+
+function reset() {
+  itemsAddedToList.textContent = ""
+}
